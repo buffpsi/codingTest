@@ -37,3 +37,19 @@ public class example3 {
         System.out.println(e3.solution(str));
     }
 }
+
+// 아래는 문자열을 리버스에서 출력할때 .reverse를 쓰지않고 직접 구현해야할때 작성해놓음
+//    public ArrayList<String> solution(int n, String[] str){
+//        ArrayList<String> answer=new ArrayList<>();
+//        for (String × : str){
+//            char[] s=x.toCharArray ();
+//            int It=0, rt=x. length() -1;
+//            while(It‹rt){
+//                char tmp = s[It];
+//                s[It] = s[rt];
+//                s[rt] = tmp;
+//                It++;
+//                rt--;
+//            }
+//                return answer;
+//            }
