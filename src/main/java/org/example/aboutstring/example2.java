@@ -8,7 +8,7 @@ public class example2 {
     public String solution(String str) {
         String answer = "";
 
-        //해당2 for each문을 사용 , 문자열을 문자배열로 만들어줘야함 코드 더 간결해짐
+        //해당1 for each문을 사용 , 문자열을 문자배열로 만들어줘야함 코드 더 간결해짐
         for (char a : str.toCharArray()) {
             if (Character.isLowerCase(a)) {
                 answer += Character.toUpperCase(a);
