@@ -7,11 +7,17 @@ import java.util.Scanner;
 public class example5 {
     public String solution(String str){
         String answer = "yes";
-        //1번 직관적으로 바로 생각 난 풀이
-        for (int i=0;i<str.length()/2; i++){
-            if (str.charAt(i) != str.charAt(str.length() -1 - i)){
-                answer = "no";
-            }
+//        //1번 직관적으로 바로 생각 난 풀이
+//        for (int i=0;i<str.length()/2; i++){
+//            if (str.charAt(i) != str.charAt(str.length() -1 - i)){
+//                answer = "no";
+//            }
+//        }
+
+        //2번 스트링 빌더를 활용한 풀이 뒤집어서 같은지 생각하면된다
+        String revStr = new StringBuilder(str).reverse().toString();
+        if (!str.equals(revStr)){
+            answer = "no";
         }
         return answer;
     }
