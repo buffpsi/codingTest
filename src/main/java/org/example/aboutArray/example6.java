@@ -33,7 +33,7 @@ public class example6 {
 
         //이제 만들어놓은것부터 제일 첫번째 값 과 마지막값을 뺴고 더해가면불필요한 +연산 할 이유가 없음
         for(int i =m; i<arr.length;i++){
-            sum += (arr[i]-arr[i-arr.length]);
+            sum += (arr[i]-arr[i-m]);
             answer = Math.max(answer,sum);
         }
         return answer;
