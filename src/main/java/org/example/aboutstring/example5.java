@@ -5,7 +5,7 @@ import java.util.Scanner;
 //펠린드롬 => 회문 문자열 판떄
 // 짝수,홀수 둘다 받는 문자열에서 2로나눠서 같은지 체크하면
 public class example5 {
-    public String solution(String str){
+    public String solution(String str) {
         String answer = "yes";
 //        //1번 직관적으로 바로 생각 난 풀이
 //        for (int i=0;i<str.length()/2; i++){
@@ -16,7 +16,7 @@ public class example5 {
 
         //2번 스트링 빌더를 활용한 풀이 뒤집어서 같은지 생각하면된다
         String revStr = new StringBuilder(str).reverse().toString();
-        if (!str.equals(revStr)){
+        if (!str.equals(revStr)) {
             answer = "no";
         }
         return answer;

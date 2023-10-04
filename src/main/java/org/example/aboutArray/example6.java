@@ -20,32 +20,33 @@ public class example6 {
 //    }
 
     //for문을 2번 돌리는거 slicing하는거 옆으로 밀어가면서
-    public int solution(int arr[], int m){
-        int answer=0;
+    public int solution(int arr[], int m) {
+        int answer = 0;
         //아래의 합으로 이제 하면된다
-        int sum =0;
+        int sum = 0;
 
         //맨 처음 만들어 놓기
-        for (int i=0; i<m; i++){
+        for (int i = 0; i < m; i++) {
             sum += arr[i];
             answer = sum;
         }
 
         //이제 만들어놓은것부터 제일 첫번째 값 과 마지막값을 뺴고 더해가면불필요한 +연산 할 이유가 없음
-        for(int i =m; i<arr.length;i++){
-            sum += (arr[i]-arr[i-m]);
-            answer = Math.max(answer,sum);
+        for (int i = m; i < arr.length; i++) {
+            sum += (arr[i] - arr[i - m]);
+            answer = Math.max(answer, sum);
         }
         return answer;
     }
-    public static void main(String args[]){
+
+    public static void main(String args[]) {
         int arr1[] = new int[5];
         int m = 1;
-        for (int i=0; i<arr1.length; i++){
+        for (int i = 0; i < arr1.length; i++) {
             arr1[i] = m;
             m++;
         }
-        int e = new example6().solution(arr1 , 2);
+        int e = new example6().solution(arr1, 2);
         System.out.println(e);
     }
 }

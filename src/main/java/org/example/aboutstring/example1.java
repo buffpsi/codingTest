@@ -19,8 +19,8 @@ public class example1 {
 
         //해당2 for each문을 사용 , 문자열을 문자배열로 만들어줘야함 코드 더 간결해
         //문자열을 문자 배열로 바꾸는 함수 toCharArray()
-        for (char a : str.toCharArray()){
-            if (a == t){
+        for (char a : str.toCharArray()) {
+            if (a == t) {
                 answer++;
             }
         }
