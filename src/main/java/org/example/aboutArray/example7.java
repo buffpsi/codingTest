@@ -14,15 +14,15 @@ import java.util.Scanner;
 //답안 방향성 lt,rt를 이용해서 푼다.
 public class example7 {
     public int solution(int N, int M, int arr[]) {
-        int answer =0, sum =0 , lt=0;
-        for (int rt =0; rt<N; rt++){
-            sum +=arr[rt];
-            if (sum==M){
-                answer ++;
+        int answer = 0, sum = 0, lt = 0;
+        for (int rt = 0; rt < N; rt++) {
+            sum += arr[rt];
+            if (sum == M) {
+                answer++;
             }
-            while(sum>= M){
+            while (sum >= M) {
                 sum -= arr[lt++];
-                if (sum==M) answer++;
+                if (sum == M) answer++;
             }
         }
         return answer;
