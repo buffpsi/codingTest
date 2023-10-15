@@ -1,6 +1,6 @@
 package org.example.Hash;
 
-import java.util.*;
+import java.util.HashMap;
 
 public class example1 {
     public char solution(int n, String s) {
